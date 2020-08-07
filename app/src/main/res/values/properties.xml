@@ -38,4 +38,5 @@
 
     <!-- Others -->
     <string name="PREF_LANGUAGE" translatable="false">pref_language</string>
+
 </resources>

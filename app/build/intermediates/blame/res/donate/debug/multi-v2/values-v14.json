@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/kevinvelasco/Desktop/i2p_android/i2p.android.base/app/build/intermediates/incremental/mergeDonateDebugResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/kevinvelasco/.gradle/caches/transforms-1/files-1.1/floatingactionbutton-1.10.1.aar/0ef301b00cd53ee36ccc9ae1643af3fe/res/values-v14/values.xml",
+                    "from": {
+                        "startLines": "4,5,6",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "200,270,341",
+                        "endColumns": "69,70,72",
+                        "endOffsets": "265,336,409"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,72",
+                        "endOffsets": "120,191,264"
+                    }
+                },
+                {
+                    "source": "/Users/kevinvelasco/Desktop/i2p_android/i2p.android.base/app/src/main/res/values-v14/styles.xml",
+                    "from": {
+                        "startLines": "3,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,281",
+                        "endLines": "6,10",
+                        "endColumns": "12,12",
+                        "endOffsets": "275,444"
+                    },
+                    "to": {
+                        "startLines": "5,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "269,493",
+                        "endLines": "8,11",
+                        "endColumns": "12,12",
+                        "endOffsets": "488,656"
+                    }
+                }
+            ]
+        }
+    ]
+}

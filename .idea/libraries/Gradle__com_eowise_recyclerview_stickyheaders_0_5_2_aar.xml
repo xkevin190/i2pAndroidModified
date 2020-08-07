@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.eowise:recyclerview-stickyheaders:0.5.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-stickyheaders-0.5.2.aar/d3b9723e04c35a707618cc46ea0e1a98/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-stickyheaders-0.5.2.aar/d3b9723e04c35a707618cc46ea0e1a98/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.eowise/recyclerview-stickyheaders/0.5.2/c9be8b049f9c99f1de72db2bb1c16cf8a6b3751e/recyclerview-stickyheaders-0.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

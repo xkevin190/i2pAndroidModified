@@ -19,6 +19,7 @@ import android.os.RemoteException;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.LocalBroadcastManager;
+import android.util.Log;
 
 import net.i2p.android.router.R;
 import net.i2p.android.router.receiver.I2PReceiver;
@@ -203,8 +204,6 @@ public class RouterService extends Service {
 
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID);
         Notification notification = notificationBuilder.setOngoing(true)
-                .setSmallIcon(R.drawable.i2plogo)
-                .setContentTitle(getString(R.string.running_background))
                 .setPriority(NotificationManager.IMPORTANCE_MIN)
                 .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
@@ -264,6 +263,7 @@ public class RouterService extends Service {
                 _context.router().setKillVMOnEnd(false);
                 Job loadJob = new LoadClientsJob(RouterService.this, _context, _notif);
                 _context.jobQueue().addJob(loadJob);
+                 Log.i("hello", "heere!: is active? "+ r.isRunning() );
                 _context.addShutdownTask(new ShutdownHook());
                 _context.addFinalShutdownTask(new FinalShutdownHook());
                 _starterThread = null;

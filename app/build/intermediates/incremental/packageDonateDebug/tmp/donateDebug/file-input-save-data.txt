@@ -1,0 +1,19 @@
+#Internal package file, do not edit.
+#Fri Aug 07 14:58:35 VET 2020
+1.base=/Users/kevinvelasco/Desktop/i2p_android/i2p.android.base/app/build/intermediates/transforms/mergeJniLibs/donate/debug/0
+2.path=classes.dex
+0.baseType=DIRECTORY
+3.baseType=DIRECTORY
+2.base=/Users/kevinvelasco/Desktop/i2p_android/i2p.android.base/app/build/intermediates/dex/donateDebug/mergeDexDonateDebug/out
+3.set=NATIVE_RESOURCE
+2.set=DEX
+1.baseType=DIRECTORY
+3.path=lib/armeabi/libjbigi.so
+count=4
+1.set=NATIVE_RESOURCE
+0.path=lib/arm64-v8a/libjbigi.so
+3.base=/Users/kevinvelasco/Desktop/i2p_android/i2p.android.base/app/build/intermediates/transforms/mergeJniLibs/donate/debug/0
+0.set=NATIVE_RESOURCE
+0.base=/Users/kevinvelasco/Desktop/i2p_android/i2p.android.base/app/build/intermediates/transforms/mergeJniLibs/donate/debug/0
+2.baseType=DIRECTORY
+1.path=lib/armeabi-v7a/libjbigi.so

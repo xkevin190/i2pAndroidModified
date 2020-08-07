@@ -33,7 +33,7 @@ import java.io.File;
 /**
  * The main activity of the app. Contains a ViewPager that holds the three main
  * views:
- * <ul>
+ * <ul>InitActivities
  * <li>The console</li>
  * <li>The addressbook</li>
  * <li>The tunnel manager</li>

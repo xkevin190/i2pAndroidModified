@@ -1,0 +1,4 @@
+#Fri Aug 07 14:58:35 VET 2020
+base.0=/Users/kevinvelasco/Desktop/i2p_android/i2p.android.base/app/build/intermediates/dex/donateDebug/mergeDexDonateDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.i2p.client:mstreaming:0.9.46@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.i2p.client/mstreaming/0.9.46/73d16f86992e11c556a01ccb8d71c569a0b25f4/mstreaming-0.9.46.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.i2p.client/mstreaming/0.9.46/b8b9856ced606fd5949d684b3df9409ebc50ef47/mstreaming-0.9.46-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.i2p.client/mstreaming/0.9.46/f6748250d9a2edcbe711125cbd687ba0961d3abb/mstreaming-0.9.46-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

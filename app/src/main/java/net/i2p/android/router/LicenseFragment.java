@@ -18,11 +18,8 @@ public class LicenseFragment extends ListFragment {
         "InstallCert", "SHA-256", "SNTP", "Addressbook"};
 
     private static final int[] files = {
-        R.raw.license_app_txt, R.raw.license_apache20_txt,
-        R.raw.licenses_txt, R.raw.license_blockfile_txt, R.raw.license_bsd_txt, R.raw.license_elgamaldsa_txt,
-        R.raw.license_gplv2_txt, R.raw.license_lgplv2_1_txt, R.raw.license_gplv3_txt, R.raw.license_lgplv3_txt,
-        R.raw.license_fatcowicons_txt, R.raw.license_bsd_txt,
-        R.raw.license_installcert_txt, R.raw.license_sha256_txt, R.raw.license_sntp_txt, R.raw.license_addressbook_txt};
+        R.raw.license_app_txt, R.raw.license_apache20_txt
+    };
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {

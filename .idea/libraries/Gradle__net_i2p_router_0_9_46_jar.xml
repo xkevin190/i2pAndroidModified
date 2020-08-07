@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.i2p:router:0.9.46@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.i2p/router/0.9.46/971afac52328f3f6fb698d712b2c1deb9e536164/router-0.9.46.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.i2p/router/0.9.46/c2856c0caa7d8101db1ac308bf8fad7b3d762fdd/router-0.9.46-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.i2p/router/0.9.46/14b588ba4a03ba5077ffa3aa7488eb3bcecab42e/router-0.9.46-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,1 @@
+[{"outputType":{"type":"BUNDLE_MANIFEST"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":4745256,"versionName":"0.9.46-DEBUG","enabled":true,"outputFile":"app-donate-debug.apk","fullName":"donateDebug","baseName":"donate-debug"},"path":"AndroidManifest.xml","properties":{"packageId":"net.i2p.android.donate.debug","split":"","minSdkVersion":"14"}}]

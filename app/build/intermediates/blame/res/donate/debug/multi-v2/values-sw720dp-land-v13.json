@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/kevinvelasco/Desktop/i2p_android/i2p.android.base/app/build/intermediates/incremental/mergeDonateDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/kevinvelasco/Desktop/i2p_android/i2p.android.base/app/src/main/res/values-sw720dp-land/dimens.xml",
+                    "from": {
+                        "startLines": "5,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "199,258",
+                        "endColumns": "58,69",
+                        "endOffsets": "253,323"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endColumns": "58,69",
+                        "endOffsets": "109,179"
+                    }
+                }
+            ]
+        }
+    ]
+}

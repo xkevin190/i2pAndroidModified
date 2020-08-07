@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.inkapplications.viewpageindicator:library:2.4.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-2.4.4.aar/c0ae7eab0eb40564c7c04b4f95be62d1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-2.4.4.aar/c0ae7eab0eb40564c7c04b4f95be62d1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.inkapplications.viewpageindicator/library/2.4.4/22d7765878d09e6a3d44ab6a9c3427cbf73dc10/library-2.4.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.i2p.android.donate.debug"
+    android:installLocation="auto"
+    android:sharedUserId="net.i2p"
+    android:versionCode="4745256"
+    android:versionName="0.9.46-DEBUG" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- following two are for UPnP -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <!--
+    required for reliable core functionality on Android, see:
+    https://geti2p.net/en/docs/applications/embedding
+    heading: "Design for and Encourage Long Uptimes"
+    -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher_itoopie"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:theme="@style/Theme.I2P" >
+        <service
+            android:name="net.i2p.android.router.service.RouterService"
+            android:icon="@drawable/ic_launcher_itoopie"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="net.i2p.android.router.service.IRouterState" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="net.i2p.android.router.provider.CacheProvider"
+            android:authorities="net.i2p.android.donate.debug.provider" />
+
+        <receiver android:name="net.i2p.android.router.receiver.OnBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.i2p.android.I2PActivity"
+            android:icon="@drawable/ic_launcher_itoopie"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+
+            <!-- Console filters -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="net.i2p.android.router.START_I2P" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- Addressbook filters -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable_addressbook" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.NewsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/label_news"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.help.HelpActivity"
+            android:label="@string/menu_help"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.help.BrowserConfigActivity"
+            android:label="@string/label_browser_configuration"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.LicenseActivity"
+            android:label="@string/label_licenses"
+            android:parentActivityName="net.i2p.android.help.HelpActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.help.HelpActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.web.WebActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="I2P Web Browser" >
+
+            <!--
+            Disabled, this browser is not very secure
+            Temporarily enabled until an alternative browser is ready
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="*.i2p"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.SettingsActivity"
+            android:label="@string/menu_settings"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.addressbook.AddressbookSettingsActivity"
+            android:label="@string/label_addressbook"
+            android:launchMode="singleTop"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.addressbook.AddressbookAddWizardActivity"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.i2ptunnel.TunnelDetailActivity"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.i2ptunnel.preferences.EditTunnelActivity"
+            android:label="@string/edit_tunnel"
+            android:parentActivityName="net.i2p.android.i2ptunnel.TunnelDetailActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.i2ptunnel.TunnelDetailActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.i2ptunnel.TunnelWizardActivity"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.log.LogActivity"
+            android:label="@string/label_logs"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.log.LogDetailActivity"
+            android:label="@string/log_entry"
+            android:parentActivityName="net.i2p.android.router.log.LogActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.router.log.LogActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.stats.RateGraphActivity"
+            android:label="@string/label_graphs"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.stats.PeersActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/label_peers_status"
+            android:launchMode="singleTop"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.netdb.NetDbActivity"
+            android:label="NetDB"
+            android:parentActivityName="net.i2p.android.I2PActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.I2PActivity" />
+        </activity>
+        <activity
+            android:name="net.i2p.android.router.netdb.NetDbDetailActivity"
+            android:label="NetDB Detail"
+            android:parentActivityName="net.i2p.android.router.netdb.NetDbActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.i2p.android.router.netdb.NetDbActivity" />
+        </activity>
+    </application>
+
+</manifest>

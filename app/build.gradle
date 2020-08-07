@@ -63,7 +63,7 @@ dependencies {
     // Local dependencies
     implementation project(':lib:client')
     implementation project(':lib:helper')
-    implementation project(path: ':routerjars', configuration: 'routerjars')
+//    implementation project(path: ':routerjars', configuration: 'routerjars')
     // Android Support Repository dependencies
     def supportVersion = '28.0.0'
     implementation "com.android.support:support-v4:$supportVersion"

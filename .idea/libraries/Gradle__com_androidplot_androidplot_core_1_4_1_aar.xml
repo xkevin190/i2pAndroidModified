@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.androidplot:androidplot-core:1.4.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidplot-core-1.4.1.aar/2839c12e75bad0fda9b4cf956a08e414/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidplot-core-1.4.1.aar/2839c12e75bad0fda9b4cf956a08e414/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.androidplot/androidplot-core/1.4.1/9367b590c7b09b139eb1825be2cd3aa90d661e79/androidplot-core-1.4.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.androidplot/androidplot-core/1.4.1/61f35be4e4037f87e7b71aa90d7fd654616c4f9e/androidplot-core-1.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
